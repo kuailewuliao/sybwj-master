@@ -17,8 +17,7 @@ AdministratorPlatform.factory('requestService', ['$http', '$rootScope', '$locati
         type:'',
         ques :[{
             ques_name: '',
-            is_answer: 0,
-            opts: [ {id:1,content: ''  }, {id:2,content: '' }]
+            opts: [ {content: '',is_answer:0  }, {content: '',is_answer:0 }]
         }]
     }
     };*/
@@ -38,8 +37,6 @@ AdministratorPlatform.factory('requestService', ['$http', '$rootScope', '$locati
         }else{
             state_url="boss_login";
         }
-        console.log(loginMessage)
-        $location.path('/teacher1');
         $http({
             method:'POST',
             url:domain+'admin/welcome/'+state_url,
@@ -48,7 +45,10 @@ AdministratorPlatform.factory('requestService', ['$http', '$rootScope', '$locati
         }).success(function (successInfo) {
             console.log('success');
             $rootScope.navShouldShow = true;
-            $location.path('/teacher1');
+            if(state==1)
+            $location.path('/teacher');
+            else
+            $location.path('/student');
             console.log(successInfo);
         }).error(function (errorInfo) {
             console.log('error');
@@ -117,7 +117,7 @@ var newtest = function ($scope) {
             console.log('success')
             $rootScope.navShuldShow = true;
             alert("创建成功");
-            $location.path('/teacherlist');
+            $location.path('/teachertestpage');
             console.log(successInfo);
         }).error(function (errorInfo) {
             console.log('error');
@@ -218,7 +218,7 @@ var postStudentTest = function($scope){
 //登出
     var logout = function ($scope) {
         $rootScope.administrator = null;
-        $location.path('/login')
+        $location.path('/')
     }
     return {
         form_id:form_id,
