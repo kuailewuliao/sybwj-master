@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>在线测试系统</title>
+    <link rel = "stylesheet" type = "text/css" href = "./components/uikit/css/uikit.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "./components/uikit/css/components/notify.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "./components/uikit/css/components/search.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "./components/uikit/css/components/autocomplete.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "./components/bootstrap/css/bootstrap.css">
+    <link rel = "stylesheet" type = "text/css" href = "./components/bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" type = "text/css" href="./components/pyl.css" >
+    <style type="text/css">
+li.test{list-style:none;}
+</style>
+<script type = "text/javascript" src = "./components/angular/angular.min.js"></script>
+</head>
+<body>
+    <div class = "uk-container-center" ng-app = "AdministratorPlatform" style = "margin: 10px">
+      <!--  <div class = "uk-navbar"  ng-show = "navShouldShow">
+            <a href = "#" class = "uk-navbar-brand" >在线测试</a>
+            <ul class = "uk-navbar-nav">
+                <li class = "{{}}"><a href = "/teacher1">出试卷</a></li>
+                <li class = "{{}}"><a href = "/teacher2">查看试卷</a></li>
+                <li class = "{{}}"><a href = "/teacher3">查看成绩</a></li>
+                <li class = "{{}}"><a href = "/teacher4">查看试卷页面</a></li>
+                <li class = "{{}}"><a href = "/teacher5">查看学生试卷页面</a></li>
+                <li class = "{{}}"><a href = "/student1">查看试卷</a></li>
+                <li class = "{{}}"><a href = "/student2">做试卷</a></li>
+                <li class = "{{}}"><a href = "/student3">查看成绩</a></li>
+                <li class = "{{}}"><a href = "/student4">查看过去试卷页面</a></li>
+            </ul>
+
+        </div>-->
+            <div ng-view>
+
+            </div>
+        <div ng-show = "paginationShouldShow">
+        <ul class="uk-pagination" data-uk-pagination="{items:100, itemsOnPage:10}"></ul>
+            </div>
+             </div>
+
+
+
+
+<script type = "text/javascript" src = "./components/jquery/dist/jquery.min.js"></script>
+<script type = "text/javascript" src = "./components/uikit/js/uikit.min.js"></script>
+<script type = "text/javascript" src = "./components/angular-route/angular-route.min.js"></script>
+<script type = "text/javascript" src = "./components/uikit/js/components/notify.min.js"></script>
+<script type = "text/javascript" src = "./components/uikit/js/components/search.min.js"></script>
+<script type = "text/javascript" src = "./components/uikit/js/components/autocomplete.min.js"></script>
+<script type = "text/javascript" src = "./components/uikit/js/components/pagination.min.js"></script>
+<script type = "text/javascript" src = "./app/AdministratorPlatform.js"></script>
+<script type = "text/javascript" src = "./router/router.js"></script>
+<script type = "text/javascript" src = "./services/requestService.js"></script>
+<script type = "text/javascript" src = "./controllers/loginCtrl.js"></script>
+<script type = "text/javascript" src = "./controllers/logoutCtrl.js"></script>
+<script type = "text/javascript" src = "./controllers/searchCtrl.js"></script>
+<script type = "text/javascript" src = "./controllers/inputDataCtrl.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadDataCtrl3.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadDataCtrl2.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadDataCtrl4.js"></script>
+<script type = "text/javascript" src = "./controllers/loadDataCtrl5.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadStudentCtrl.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadStudentCtrl2.js"></script>
+<script type = "text/javascript" src = "./controllers/LoadStudentCtrl3.js"></script>
+<script type = "text/javascript" src = "./components/bootstrap/js/bootstrap.js"></script>
+<script type = "text/javascript" src = "./components/angular-resource/angular-resource.min.js"></script>
+</body>
+</html>

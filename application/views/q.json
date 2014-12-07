@@ -1,0 +1,18 @@
+{
+"user_id":"qq",
+"username":"ddd",
+"form_id":2,
+"form":{
+"form_name":"aaa",
+"type":1,
+"ques" :[{
+"ques_name":"aa",
+"is_answer":1,
+"opts": [{"id":1,"content": "sadasd"  }, {"id":2,"content": "fasfa" }]
+  },{
+"ques_name":"a2",
+"is_answer":2,
+"opts": [{"id":1,"content": "sadasd"  }, {"id":2,"content": "fasfa" }]
+}]
+}
+}
